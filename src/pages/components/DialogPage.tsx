@@ -15,7 +15,7 @@ import {
 import {
     Settings,
     Trash2,
-    User,
+    
 } from "lucide-react";
 
 

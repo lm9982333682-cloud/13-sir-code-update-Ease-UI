@@ -7,9 +7,9 @@ import ComponentDemo from "../ComponentsDemo";
 import PropsTable from "@/components/Personal/PropsTable";
 
 import {
-    Check,
+    
     ChevronRight,
-    Mail,
+   
     User,
 } from "lucide-react";
 

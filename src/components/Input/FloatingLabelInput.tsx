@@ -18,15 +18,17 @@ const inputCls = cva(
 );
 
 export interface FloatingLabelProps
-  extends React.InputHTMLAttributes<HTMLInputElement> {
-  label: string;
+  extends Omit<
+    React.InputHTMLAttributes<HTMLInputElement>,
+    "size"
+  > {
   size?: "sm" | "md" | "lg";
 }
 
 export const FloatingLabelInput = React.forwardRef<
   HTMLInputElement,
   FloatingLabelProps
->(({ label, size = "md", className, ...props }, ref) => {
+>(({  size = "md", className, ...props }, ref) => {
   const [focused, setFocused] = useState(false);
   const filled = !!(props.value ?? props.defaultValue);
   const shrink = focused || filled;
@@ -51,7 +53,7 @@ export const FloatingLabelInput = React.forwardRef<
           shrink ? "-translate-y-4 scale-75" : "translate-y-0 scale-100"
         )}
       >
-        {label}
+        
       </label>
     </div>
   );

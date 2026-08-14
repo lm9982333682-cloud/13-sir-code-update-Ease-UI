@@ -6,7 +6,7 @@ import {
     AlertTriangle,
     Ban,
     FileQuestion,
-    Globe,
+  
     RefreshCw,
     ServerCrash,
     WifiOff,
