@@ -95,7 +95,7 @@ const InputPage = () => {
           <ComponentDemo code={sizesCode}>
             <div className="flex flex-col gap-4">
               <AnimatedInput label="Animated" placeholder="Focus me" />
-              <FloatingLabelInput label="Floating" placeholder="" />
+              <FloatingLabelInput  placeholder="" />
               <InputWithIcon label="Search" icon={<Search />} />
               <PasswordInput label="Password" />
               <NumberInput label="Age" onChange={(v) => console.log(v)} />
