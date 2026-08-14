@@ -1,102 +1,106 @@
 # 🚀 Ease UI
 
-A modern, reusable, and customizable **React + TypeScript UI Component Library** built with **Tailwind CSS, Class Variance Authority (CVA), and GSAP**.
+A modern and reusable **React + TypeScript UI Component Library** built with **Tailwind CSS**.
 
-Ease UI is designed to make frontend development faster by providing reusable, responsive, animated, and customizable UI components.
+Ease UI provides a collection of reusable, customizable, responsive, and developer-friendly UI components that can be easily integrated into React applications.
 
 ---
 
 ## 🌐 Project Overview
 
-**Ease UI** is a reusable component-based UI project created using React and TypeScript.
+**Ease UI** is a component-based frontend project created to make UI development easier and more reusable.
 
-The main goal of this project is to build commonly required frontend components once and reuse them across different React applications.
+The main idea behind this project is to create commonly used UI components once and reuse them through simple props and configurations instead of writing the same UI code repeatedly.
 
-Instead of writing the same UI code repeatedly, Ease UI provides configurable components through props, variants, sizes, animations, and custom classes.
+Each component has its own documentation/demo page where different variations and use cases can be tested.
 
-The project also includes dedicated documentation/demo pages where each component can be tested and its API/props can be understood easily.
+The project also includes an API Reference section for understanding component props, types, default values, and their purpose.
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-- 🧩 Reusable React Components
-- 🔷 TypeScript Support
-- 🎨 Tailwind CSS Styling
-- ⚡ GSAP Animations
-- 🎭 Class Variance Authority (CVA)
-- 📱 Responsive Design
-- ♻️ Props-based Customization
-- 🎬 Interactive Animations
-- 🧠 Type-safe Component APIs
-- 📚 Component Documentation
-- 💻 Live Component Examples
-- 🎯 Multiple Component Variants
-- 🛠️ Custom `className` Support
-- 🔄 Reusable Animation System
-- 📦 Modular Component Structure
+- ⚛️ React-based UI components
+- 🔷 TypeScript support
+- 🎨 Tailwind CSS styling
+- ♻️ Reusable components
+- 🧩 Component-based architecture
+- 📱 Responsive design
+- 🎯 Props-based customization
+- 🎨 Multiple component variants
+- 📐 Multiple component sizes
+- 🛠️ Custom `className` support
+- 📚 Component documentation
+- 💻 Live component examples
+- 📋 Props/API reference
+- 🔄 Interactive components
+- 🧱 Modular folder structure
+- 🧠 Type-safe component development
 
 ---
 
 # 🧱 Components
 
-Ease UI contains multiple reusable UI components.
+Ease UI contains a collection of reusable UI components.
 
-## Basic Components
+## Basic UI Components
 
 - Button
 - Card
 - Tooltip
 - Layout
+
+## Feedback Components
+
 - Loading
 - Error
 - Success
+- Toast
 
-## Navigation & Interaction
+## Navigation Components
 
 - Tabs
 - Accordion
 - Collapse
 - Pagination
 - Carousel
-- Dialog
-- Toast
 
-## Data & Content
+## Overlay Components
+
+- Dialog
+
+## Data Display Components
 
 - Table
 - List
-- Image Gallery
 - Counter
-- Random Color
 
-## Utility / Application Components
+## Media Components
 
-- API
+- Image Gallery
+
+## Utility Components
+
 - Form
-- Loading State
-- Error State
-- Success State
-
-More components can be added as the project grows.
+- API
+- Random Color
 
 ---
 
-# 🎨 Component System
+# 🎨 Component Architecture
 
-Every component is designed to be reusable and configurable.
+Each component is created as an independent and reusable React component.
 
-For example, instead of creating multiple buttons manually:
+The components are designed so that their appearance and behavior can be controlled through props.
+
+For example:
 
 ```tsx
-<Button variant="primary">
-  Submit
-</Button>
-
-<Button variant="secondary">
-  Cancel
-</Button>
-
-<Button variant="danger">
-  Delete
-</Button>
+<Tooltip
+  content="This is a tooltip"
+  position="top"
+>
+  <button>
+    Hover Me
+  </button>
+</Tooltip>
